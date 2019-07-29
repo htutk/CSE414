@@ -1,0 +1,12 @@
+SELECT g1.country_name, g1.country_code, g1.area
+FROM 
+(SELECT c.`-car_code` as country_code,
+c.name as country_name, c.`-area` as area
+FROM hw5.world x, x.mondial.country c) AS g1
+LEFT OUTER JOIN
+(SELECT DISTINCT cc1
+FROM hw5.world x1, x1.mondial.sea s,
+split(s.`-country`, " ") cc1) AS g2
+ON g1.country_code = g2.cc1
+WHERE is_unknown(g2.cc1)
+ORDER BY float(area) DESC;

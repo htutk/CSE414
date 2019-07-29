@@ -1,0 +1,7 @@
+{ "mountains": [ { "mountain": "Sulitjelma" } ], "seas": [ { "sea": "Skagerrak" } ], "first_country": "Norway", "second_country": "Sweden" }
+{ "mountains": [ { "mountain": "Vignemale" } ], "seas": [ { "sea": "Atlantic Ocean" }, { "sea": "Mediterranean Sea" } ], "first_country": "Spain", "second_country": "France" }
+{ "mountains": [ { "mountain": "Kasbek" } ], "seas": [ { "sea": "Black Sea" } ], "first_country": "Georgia", "second_country": "Russia" }
+{ "mountains": [ { "mountain": "Mont Blanc" } ], "seas": [ { "sea": "Mediterranean Sea" } ], "first_country": "France", "second_country": "Italy" }
+{ "mountains": [ { "mountain": "Changbai Shan" } ], "seas": [ { "sea": "Yellow Sea" } ], "first_country": "North Korea", "second_country": "China" }
+{ "mountains": [ { "mountain": "Llullaillaco" }, { "mountain": "Ojos del Salado" } ], "seas": [ { "sea": "Atlantic Ocean" } ], "first_country": "Argentina", "second_country": "Chile" }
+{ "mountains": [ { "mountain": "Mt Bona" }, { "mountain": "Mt Fairweather" }, { "mountain": "Mt St.Elias" } ], "seas": [ { "sea": "Arctic Ocean" }, { "sea": "Pacific Ocean" }, { "sea": "Atlantic Ocean" } ], "first_country": "Canada", "second_country": "United States" }

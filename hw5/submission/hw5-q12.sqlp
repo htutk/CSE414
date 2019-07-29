@@ -1,0 +1,62 @@
+-- 0.5 s!
+-- pretty fast for a complicated query.
+
+USE hw5index;
+
+SELECT DISTINCT c1.name as first_country, c2.name as second_country, mountains, seas
+
+FROM
+
+(SELECT g1.name as mountain, g2.name as sea, cc3 as country
+FROM
+(SELECT m1.name, m1.`-country`
+FROM mountain m1,
+split(m1.`-country`, " ") cc1
+GROUP BY m1.name, m1.`-country`
+HAVING COUNT(cc1) > 1) g1, 
+split(g1.`-country`, " ") cc3,
+
+(SELECT s1.name, s1.`-country`
+FROM sea s1,
+split(s1.`-country`, " ") cc2
+GROUP BY s1.name, s1.`-country`
+HAVING COUNT(cc2) > 1) g2,
+split(g2.`-country`, " ") cc4
+
+WHERE cc3 = cc4) a1,
+
+(SELECT g1.name as mountain, g2.name as sea, cc3 as country
+FROM
+(SELECT m1.name, m1.`-country`
+FROM mountain m1,
+split(m1.`-country`, " ") cc1
+GROUP BY m1.name, m1.`-country`
+HAVING COUNT(cc1) > 1) g1, 
+split(g1.`-country`, " ") cc3,
+
+(SELECT s1.name, s1.`-country`
+FROM sea s1,
+split(s1.`-country`, " ") cc2
+GROUP BY s1.name, s1.`-country`
+HAVING COUNT(cc2) > 1) g2,
+split(g2.`-country`, " ") cc4
+
+WHERE cc3 = cc4) a2,
+
+country c1,
+country c2
+
+LET mountains = (SELECT m_1.name
+FROM mountain m_1, split(m_1.`-country`, " ") cc_1, split(m_1.`-country`, " ") cc_2
+WHERE cc_1 = c1.`-car_code`
+AND cc_2 = c2.`-car_code`),
+seas = (SELECT DISTINCT s_1.name
+FROM sea s_1, split(s_1.`-country`, " ") cc_1, split(s_1.`-country`, " ") cc_2
+WHERE cc_1 = c1.`-car_code`
+AND cc_2 = c2.`-car_code`)
+
+WHERE a1.mountain = a2.mountain
+AND a1.sea = a2.sea
+AND a1.country < a2.country
+AND c1.`-car_code` = a1.country
+AND c2.`-car_code` = a2.country;

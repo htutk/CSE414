@@ -1,0 +1,12 @@
+# create two users: bruce, tony
+create bruce hulk 1234
+create tony ironman 50000
+create bruce thehulk 12345
+quit
+*
+# expected sequence of outputs
+Created user bruce
+Created user tony
+Failed to create user
+Goodbye
+*

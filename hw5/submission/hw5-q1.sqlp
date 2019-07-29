@@ -1,0 +1,6 @@
+SELECT u.name as city
+FROM hw5.world x, x.mondial.country y, y.province z,
+CASE WHEN is_array(z.city) then z.city
+ELSE [z.city] END u
+WHERE y.name = 'Peru'
+ORDER BY u.name; 

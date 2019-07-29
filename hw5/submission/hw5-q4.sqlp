@@ -1,0 +1,7 @@
+SELECT z.`#text` as ethnic_group, COUNT(y.name) as num_countries, SUM(pop) as total_population
+FROM hw5.world x, x.mondial.country y, 
+CASE WHEN y.ethnicgroups IS missing THEN []
+WHEN is_array(y.ethnicgroups) THEN y.ethnicgroups
+ELSE [y.ethnicgroups] END z
+LET pop = float(y.population) * float(z.`-percentage`) / 100
+GROUP BY z.`#text`;

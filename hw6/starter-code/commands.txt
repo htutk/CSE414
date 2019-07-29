@@ -1,0 +1,12 @@
+# the folder temp must not exist.
+# run
+java -cp "C:\19_SPRING\CSE_414\spark-2.4.3-bin-hadoop2.7\jars\*;." HW6 ".\flights_small" ".\temp"
+
+# compile
+javac -cp "C:\19_SPRING\CSE_414\spark-2.4.3-bin-hadoop2.7\jars\*" HW6.java
+
+# make jars
+jar cf HW6.jar *.class
+
+# input flights
+s3://us-east-1.elasticmapreduce.samples/flightdata/input

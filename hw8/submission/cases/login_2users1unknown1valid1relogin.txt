@@ -1,0 +1,19 @@
+# create two users: bruce, tony
+# login in as an unknown user
+# login in as tony
+# login in as tony again
+create bruce hulk 1234
+create tony ironman 50000
+login steve cap
+login tony ironman
+login tony ironman
+quit
+*
+# expected sequence of outputs
+Created user bruce
+Created user tony
+Login failed
+Logged in as tony
+User already logged in
+Goodbye
+*

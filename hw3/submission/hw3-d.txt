@@ -1,0 +1,12 @@
+# Alex Htut
+# CSE_414
+# 04/26/2019
+
+The Azure DBMS is way more useful than sqlite3 local database. To build any kind of interaction
+between client and server, we need a reliable cloud service. Azure DBMs provides exactly that.
+At this day of age as IoT becomes abundant, cloud service for data storage is a must.
+For DIY projects however, Azure may not be the place to go since it is a paid subscription.
+
+My only question is how come the queries we have written take about 20s, 30s while most websites
+these days can "rank" or "sort" within a few seconds. Assuming that they use a similar cloud service,
+how are those queries much faster to execute?

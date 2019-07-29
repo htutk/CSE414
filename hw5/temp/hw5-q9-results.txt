@@ -1,0 +1,7 @@
+{ "first_country": "Spain", "second_country": "France" }
+{ "first_country": "France", "second_country": "Italy" }
+{ "first_country": "Canada", "second_country": "United States" }
+{ "first_country": "Norway", "second_country": "Sweden" }
+{ "first_country": "Georgia", "second_country": "Russia" }
+{ "first_country": "Argentina", "second_country": "Chile" }
+{ "first_country": "North Korea", "second_country": "China" }

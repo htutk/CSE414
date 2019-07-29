@@ -1,0 +1,9 @@
+SELECT p1, MAX(y) AS Z
+FROM (SELECT p1, COUNT(*) AS y
+      FROM  (person_living JOIN parent_child
+            ON x = p1) JOIN
+            (SELECT p1 AS p3, p2 AS p4
+            FROM parent_child)
+            ON p2 = p3
+            GROUP BY p1, p3)
+GROUP BY p1;

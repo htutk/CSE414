@@ -1,0 +1,3 @@
+T1(p2) = parent_child(p1,p2) JOIN[p1=name] female(name)
+T2(p) = person_living(p) JOIN[p=name] male(name)
+T3(p) = T2(p), !T1(p)

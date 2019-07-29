@@ -1,0 +1,15 @@
+# this case tests for the ability to detect only direct flights
+#
+# user 1
+search "Seattle WA" "Miami FL" 1 1 5
+quit
+*
+#
+# expected printouts for user 1
+#
+Itinerary 0: 1 flight(s), 323 minutes
+ID: 60201 Day: 1 Carrier: AS Number: 16 Origin: Seattle WA Dest: Miami FL Duration: 323 Capacity: 11 Price: 118
+Itinerary 1: 1 flight(s), 324 minutes
+ID: 640504 Day: 1 Carrier: AA Number: 1070 Origin: Seattle WA Dest: Miami FL Duration: 324 Capacity: 12 Price: 932
+Goodbye
+*

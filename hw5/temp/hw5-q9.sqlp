@@ -1,0 +1,49 @@
+-- 25.039 s
+-- This query includes many simple subqueries inside.
+-- It runs very efficiently.
+
+SELECT DISTINCT c1.name as first_country, c2.name as second_country
+FROM
+
+(SELECT g1.name as mountain, g2.name as sea, cc3 as country
+FROM
+(SELECT m1.name, m1.`-country`
+FROM hw5.world x1, x1.mondial.mountain m1,
+split(m1.`-country`, " ") cc1
+GROUP BY m1.name, m1.`-country`
+HAVING COUNT(cc1) > 1) g1, 
+split(g1.`-country`, " ") cc3,
+
+(SELECT s1.name, s1.`-country`
+FROM hw5.world x2, x2.mondial.sea s1,
+split(s1.`-country`, " ") cc2
+GROUP BY s1.name, s1.`-country`
+HAVING COUNT(cc2) > 1) g2,
+split(g2.`-country`, " ") cc4
+
+WHERE cc3 = cc4) a1,
+
+(SELECT g1.name as mountain, g2.name as sea, cc3 as country
+FROM
+(SELECT m1.name, m1.`-country`
+FROM hw5.world x1, x1.mondial.mountain m1,
+split(m1.`-country`, " ") cc1
+GROUP BY m1.name, m1.`-country`
+HAVING COUNT(cc1) > 1) g1, 
+split(g1.`-country`, " ") cc3,
+
+(SELECT s1.name, s1.`-country`
+FROM hw5.world x2, x2.mondial.sea s1,
+split(s1.`-country`, " ") cc2
+GROUP BY s1.name, s1.`-country`
+HAVING COUNT(cc2) > 1) g2,
+split(g2.`-country`, " ") cc4
+
+WHERE cc3 = cc4) a2,
+hw5.world xx, xx.mondial.country c1, xx.mondial.country c2
+
+WHERE a1.mountain = a2.mountain
+AND a1.sea = a2.sea
+AND a1.country < a2.country
+AND c1.`-car_code` = a1.country
+AND c2.`-car_code` = a2.country;

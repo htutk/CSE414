@@ -1,0 +1,5 @@
+// to compile
+javac -cp "lib/*" *.java
+
+// to run
+java -cp "lib/*;." FlightService

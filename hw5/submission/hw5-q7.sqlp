@@ -1,0 +1,16 @@
+SELECT g1.country_name, g1.country_code, g1.seas
+FROM 
+(SELECT c.`-car_code` as country_code, 
+c.name as country_name, seas
+FROM hw5.world x, x.mondial.country c
+LET seas = (SELECT s.name as sea
+FROM x.mondial.sea s, 
+split(s.`-country`, " ") cc
+WHERE c.`-car_code` = cc)) AS g1,
+(SELECT cc1, COUNT(s.name) as cnt
+FROM hw5.world x1, x1.mondial.sea s,
+split(s.`-country`, " ") AS cc1
+GROUP BY cc1
+HAVING COUNT(s.name) > 1) AS g2
+WHERE g1.country_code = g2.cc1
+ORDER BY g2.cnt DESC;

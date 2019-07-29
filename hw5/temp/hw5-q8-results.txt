@@ -1,0 +1,45 @@
+{ "country_name": "Kazakstan", "country_code": "KAZ", "area": "2717300" }
+{ "country_name": "Mongolia", "country_code": "MNG", "area": "1565000" }
+{ "country_name": "Chad", "country_code": "TCH", "area": "1284000" }
+{ "country_name": "Niger", "country_code": "RN", "area": "1267000" }
+{ "country_name": "Mali", "country_code": "RMM", "area": "1240000" }
+{ "country_name": "Ethiopia", "country_code": "ETH", "area": "1127127" }
+{ "country_name": "Bolivia", "country_code": "BOL", "area": "1098580" }
+{ "country_name": "Zambia", "country_code": "Z", "area": "752610" }
+{ "country_name": "Afghanistan", "country_code": "AFG", "area": "647500" }
+{ "country_name": "Central African Republic", "country_code": "RCA", "area": "622980" }
+{ "country_name": "Botswana", "country_code": "RB", "area": "600370" }
+{ "country_name": "Turkmenistan", "country_code": "TM", "area": "488100" }
+{ "country_name": "Uzbekistan", "country_code": "UZB", "area": "447400" }
+{ "country_name": "Paraguay", "country_code": "PY", "area": "406750" }
+{ "country_name": "Zimbabwe", "country_code": "ZW", "area": "390580" }
+{ "country_name": "Burkina Faso", "country_code": "BF", "area": "274200" }
+{ "country_name": "Laos", "country_code": "LAO", "area": "236800" }
+{ "country_name": "Uganda", "country_code": "EAU", "area": "236040" }
+{ "country_name": "Belarus", "country_code": "BY", "area": "207600" }
+{ "country_name": "Kyrgyzstan", "country_code": "KGZ", "area": "198500" }
+{ "country_name": "Tajikistan", "country_code": "TAD", "area": "143100" }
+{ "country_name": "Nepal", "country_code": "NEP", "area": "140800" }
+{ "country_name": "Malawi", "country_code": "MW", "area": "118480" }
+{ "country_name": "Hungary", "country_code": "H", "area": "93030" }
+{ "country_name": "Azerbaijan", "country_code": "AZ", "area": "86600" }
+{ "country_name": "Austria", "country_code": "A", "area": "83850" }
+{ "country_name": "Czech Republic", "country_code": "CZ", "area": "78703" }
+{ "country_name": "Serbia", "country_code": "SRB", "area": "77474" }
+{ "country_name": "Slovakia", "country_code": "SK", "area": "48845" }
+{ "country_name": "Bhutan", "country_code": "BHT", "area": "47000" }
+{ "country_name": "Switzerland", "country_code": "CH", "area": "41290" }
+{ "country_name": "Moldova", "country_code": "MD", "area": "33700" }
+{ "country_name": "Lesotho", "country_code": "LS", "area": "30350" }
+{ "country_name": "Armenia", "country_code": "ARM", "area": "29800" }
+{ "country_name": "Burundi", "country_code": "BI", "area": "27830" }
+{ "country_name": "Rwanda", "country_code": "RWA", "area": "26340" }
+{ "country_name": "Macedonia", "country_code": "MK", "area": "25333" }
+{ "country_name": "Swaziland", "country_code": "SD", "area": "17360" }
+{ "country_name": "Kosovo", "country_code": "KOS", "area": "10887" }
+{ "country_name": "West Bank", "country_code": "WEST", "area": "5860" }
+{ "country_name": "Luxembourg", "country_code": "L", "area": "2586" }
+{ "country_name": "Andorra", "country_code": "AND", "area": "450" }
+{ "country_name": "Liechtenstein", "country_code": "FL", "area": "160" }
+{ "country_name": "San Marino", "country_code": "RSM", "area": "60" }
+{ "country_name": "Holy See", "country_code": "V", "area": "0.44" }
